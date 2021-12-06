@@ -1,8 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap");
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #26ade4;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.books-card {
+  padding: 40px 20%;
+  text-align: left;
+  width: 100%;
+}
+
+.form-card {
+  border: 2px solid #4dbce9;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 1px 1px 9px -1px #26ade4;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Righteous", cursive;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.form-card button {
+  padding: 10px 40px;
+  background-color: #26ade4;
+  box-shadow: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container h3 {
+  padding-left: 10px;
+}
+
+.form-control {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: left;
+}
+
+.form-control div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+input {
+  width: 200px;
+}
+
+select {
+  width: 200px;
+}
+
+input:invalid {
+  outline-color: red;
+}
+
+select:invalid {
+  outline-color: red;
+}
+
+.books-card h2 {
+  border-bottom: 1px solid #26ade4;
+  padding-bottom: 5px;
+  display: inline;
+}
+
+.book-card {
+  padding: 10px 0;
+  border-bottom: 1px solid #26ade4;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
