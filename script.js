@@ -1,8 +1,3 @@
-const titleInput = document.querySelector("#title");
-const authorInput = document.querySelector("#author");
-const priorityInput = document.querySelector("#read-priority");
-const categoryInput = document.querySelector("#category");
-
 const getBooksFromStorage = () => {
     let books;
     if (localStorage.getItem("books") === null) {
@@ -32,7 +27,11 @@ const getBooksFromStorage = () => {
     });
   };
   
-  const addBook = (title, author, priority, category) => {
+  const addBook = () => {
+    const title = document.querySelector("#title");
+    const author = document.querySelector("#author");
+    const priority = document.querySelector("#read-priority");
+    const category = document.querySelector("#category");
     const book = {
       title: title.value,
       author: author.value,
@@ -57,5 +56,5 @@ const getBooksFromStorage = () => {
   
   document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
-    addBook(titleInput, authorInput, priorityInput, categoryInput);
+    addBook();
   });
