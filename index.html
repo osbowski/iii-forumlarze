@@ -13,6 +13,63 @@
     </header>
 
     <section class="form-container">
+      <div class="form-card">
+        <h3>Add boook to your pile of shame ;)</h3>
+        <form>
+          <div class="form-control">
+            <div>
+              <label for="title">Title</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                minlength="1"
+                required
+              />
+            </div>
+            <div>
+              <label for="author">Author</label>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                minlength="3"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-control">
+            <div>
+              <label for="priority">Priority of read (1-5)</label>
+              <input
+                type="number"
+                min="1"
+                max="5"
+                value="1"
+                id="read-priority"
+                name="read-priority"
+              />
+            </div>
+            <div>
+              <label for="category">Category</label>
+              <select name="category" id="category" required>
+                <option disabled selected value>-- select an option --</option>
+                <option value="Fantasy/SF">Fantasy/SF</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Non-fiction">Non-fiction</option>
+              </select>
+            </div>
+          </div>
+          <button>Add to Library</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="books-container">
+      <div class="books-card">
+        <h2>Your Books</h2>
+        <div class="book-list"></div>
+      </div>
     </section>
 
     <script src="script.js"></script>
